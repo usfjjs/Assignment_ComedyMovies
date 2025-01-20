@@ -1,47 +1,85 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
-html {
-  height: 100%;
-}
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}header {
+    background: linear-gradient(to bottom, #5abd33, #f9f9f9);
+    color: #000;
+    padding: 20px;
+    text-align: center;
 }
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+footer {
+    background-color: #003600;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+    width: 100%;
 }
-
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+/*navagation*/
+nav {
+    background-color: #f9f9f9;
 }
-
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
+nav ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #003600;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #003600;
+    color: #fff;
+}
+/*headings*/
+h1 {
+    font-size: 2.5em;
+    color: #003600;
+}
+h2 {
+    color: #003600;
+}
+/*table*/
+table {
+    border: 1px solid #003600;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #003600;
+    padding: 8px;
+}
+/*form*/
+form {
+    padding: 10px;
+}
+/*list*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+a {
+    color: #003600;
+    text-decoration: none;
 }

@@ -1,0 +1,62 @@
+<!--  
+    Author: Jhoan J. Sanchez
+    Date: 01/19/2025
+    Description: HTML page for ISM 6225. Project 2. Theme is Comedy Movies.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShareLaughs - Comedy Movie Reviews</title>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Analytics</h1>
+            <p>ShareLaughs - Your go-to spot for all things comedy movies!</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🎥 Home</a></li>
+                    <li><a href="about_us.html">ℹ️ About Us</a></li>
+                    <li><a href="reviews.html">📝 Reviews</a></li>
+                    <li><a href="analytics.html">📈 Analytics</a></li>
+                    <li><a href="join.html">🚪 Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2 style="text-align: center;">Highest grossing movies per year, from 2015 to 2019</h2>
+            <canvas id="MoviesChart"></canvas>
+            <p>Source - movieweb.com: <a href="https://movieweb.com/highest-grossing-comedy-movie-each-year-in-2010s/">The Highest-Grossing Comedy Movie from Each Year in the 2010s</a></p>
+            <script>
+                const ctx = document.getElementById('MoviesChart');
+                
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2015 - Pitch Perfect 2', '2016 - Deadpool', '2017 - Jumanji 2', '2018 - Deadpool 2', '2019 - Jumanji 3'],
+                        datasets: [{
+                            label: 'in Millions',
+                            data: [287, 782, 380, 734, 800],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </main>
+    </body>
+    <footer>
+        <p>&copy; 2025 ShareLaughs. All rights reserved.</p>
+    </footer>
+</html>
